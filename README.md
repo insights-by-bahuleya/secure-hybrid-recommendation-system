@@ -54,43 +54,9 @@ This project implements a **hybrid recommendation system** for Airbnb listings t
 ## 🏗️ System Architecture
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
-│                 User Interaction Layer                     │
-│                (Planned Web Interface)                     │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-┌────────────────────────▼────────────────────────────────────┐
-│                  Recommendation Engine                      │
-│                                                             │
-│  ┌──────────────────┐    ┌─────────────────────────────┐   │
-│  │ Collaborative    │    │ Content-Based Filtering     │   │
-│  │ Filtering        │◄──►│                             │   │
-│  └──────────────────┘    └─────────────────────────────┘   │
-│             │                     │                         │
-│             └──────────┬──────────┘                         │
-│                        ▼                                    │
-│              ┌────────────────────┐                         │
-│              │    Hybrid Model    │                         │
-│              └────────────────────┘                         │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-┌────────────────────────▼────────────────────────────────────┐
-│                     Security Layer                          │
-│                                                             │
-│  • Fake Review Detection using NLP                          │
-│  • Malicious Behavior & Anomaly Detection                   │
-│  • Trust-Aware Recommendation Scoring                       │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-┌────────────────────────▼────────────────────────────────────┐
-│                         Data Layer                          │
-│                                                             │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────────────┐ │
-│ │ Listings DB  │ │  Users DB    │ │ Interaction Data     │ │
-│ │              │ │              │ │ (Ratings/Reviews/    │ │
-│ │              │ │              │ │ Clicks)              │ │
-│ └──────────────┘ └──────────────┘ └──────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
+## 📌 Secure Recommendation System Workflow
+
+![Workflow Diagram](assets/workflow-diagram.png.png)
 ```
 
 ## 🛠️ Technologies
