@@ -53,13 +53,9 @@ This project implements a **hybrid recommendation system** for Airbnb listings t
 
 ## 🏗️ System Architecture
 
-```text
-
 ## 📌 Secure Recommendation System Workflow
 
 ![Workflow Diagram](assets/workflow-diagram.png.png)
-
-```
 
 ## 🛠️ Technologies
 
